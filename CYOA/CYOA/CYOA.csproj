@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6ECAF666-9B72-48EA-AD9A-5374155CF385}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CYOA</RootNamespace>
+    <AssemblyName>CYOA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuySell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuySell.Designer.cs">
+      <DependentUpon>BuySell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finale.Designer.cs">
+      <DependentUpon>Finale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G.cs" />
+    <Compile Include="H.cs" />
+    <Compile Include="Lifedecision1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lifedecision1.Designer.cs">
+      <DependentUpon>Lifedecision1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intro.Designer.cs">
+      <DependentUpon>intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewsForm.Designer.cs">
+      <DependentUpon>NewsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pass1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pass1.Designer.cs">
+      <DependentUpon>Pass1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Day1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Day1.Designer.cs">
+      <DependentUpon>Day1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="path1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="path1.Designer.cs">
+      <DependentUpon>path1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="path2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="path2.Designer.cs">
+      <DependentUpon>path2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trade1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trade1.Designer.cs">
+      <DependentUpon>Trade1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuySell.resx">
+      <DependentUpon>BuySell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finale.resx">
+      <DependentUpon>Finale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lifedecision1.resx">
+      <DependentUpon>Lifedecision1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intro.resx">
+      <DependentUpon>intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewsForm.resx">
+      <DependentUpon>NewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pass1.resx">
+      <DependentUpon>Pass1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Day1.resx">
+      <DependentUpon>Day1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="path1.resx">
+      <DependentUpon>path1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="path2.resx">
+      <DependentUpon>path2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trade1.resx">
+      <DependentUpon>Trade1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lgi01a201310180400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ancient money clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-29078_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart-clip-art-valentine_heart_29-1969px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows10erbaadelaekkertogfyldtmedpjat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb_14400082930User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first stock.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newspaper-PNG-Clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\investopedia.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Newspaper-PNG-Clipart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-29078_960_7201.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yamaha-clipart-sport-bike-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Transparent-PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HAPPY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good4.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good5.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good6.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good7.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good8.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good9.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\good10.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13501541911789678376money.svg.hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BPO-guy-at-desk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clip-art-2445416_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sport-motorcyclist-people-and-sport-bike-on-white-background-clipart-vector_csp33542252.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\professional-trader-online-working-trader-vector-18410898.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\how-to.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher-manager-between-chair-and-desk-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13501541911789678376money.svg.hi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yamaha-clipart-sport-bike-161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yamaha-clipart-sport-bike-162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Transparent-PNG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pepperoni-pizza-slice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy-Pizza-Steve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stretched_out_Steve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AMD-Radeon-HD-7990-360W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeForce-GTX-1080-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AMD-Radeon-HD-7990-360W1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-dog-png-image-picture-download-dogs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat-PNG-HD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cat-PNG-HD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeForce-GTX-1080-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-dog-png-image-picture-download-dogs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock-Market-PNG-HD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Friends-PNG-Pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stock-Market-PNG-HD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Friends-PNG-Pic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tradinglife.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
